@@ -1,4 +1,4 @@
-import '@dist/output.css'
+import '@styles/output.css'
 
 function Application({ Component, pageProps }) {
   return <Component {...pageProps} />
