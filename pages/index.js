@@ -8,23 +8,12 @@ export default function Home() {
     
 
   <div>
-    <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
     <div class="relative z-50 lg:hidden" role="dialog" aria-modal="true">
-      <!--
-        Off-canvas menu backdrop, show/hide based on off-canvas menu state.
-  
-        Entering: "transition-opacity ease-linear duration-300"
-          From: "opacity-0"
-          To: "opacity-100"
-        Leaving: "transition-opacity ease-linear duration-300"
-          From: "opacity-100"
-          To: "opacity-0"
-      -->
+      
       <div class="fixed inset-0 bg-gray-900/80"></div>
   
       <div class="fixed inset-0 flex">
-        <!--
-          Off-canvas menu, show/hide based on off-canvas menu state.
+       /* Off-canvas menu, show/hide based on off-canvas menu state.
   
           Entering: "transition ease-in-out duration-300 transform"
             From: "-translate-x-full"
@@ -32,9 +21,9 @@ export default function Home() {
           Leaving: "transition ease-in-out duration-300 transform"
             From: "translate-x-0"
             To: "-translate-x-full"
-        -->
+        */
         <div class="relative mr-16 flex w-full max-w-xs flex-1">
-          <!--
+        /* 
             Close button, show/hide based on off-canvas menu state.
   
             Entering: "ease-in-out duration-300"
@@ -43,7 +32,7 @@ export default function Home() {
             Leaving: "ease-in-out duration-300"
               From: "opacity-100"
               To: "opacity-0"
-          -->
+              */
           <div class="absolute left-full top-0 flex w-16 justify-center pt-5">
             <button type="button" class="-m-2.5 p-2.5">
               <span class="sr-only">Close sidebar</span>
@@ -53,7 +42,7 @@ export default function Home() {
             </button>
           </div>
   
-          <!-- Sidebar component, swap this element with another sidebar if you like -->
+          /* Sidebar component, swap this element with another sidebar if you like */
           <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-4">
             <div class="flex h-16 shrink-0 items-center">
               <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
@@ -63,7 +52,7 @@ export default function Home() {
                 <li>
                   <ul role="list" class="-mx-2 space-y-1">
                     <li>
-                      <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:text-indigo-600 hover:bg-gray-50" -->
+                    /*  Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:text-indigo-600 hover:bg-gray-50" */
                       <a href="#" class="bg-gray-50 text-indigo-600 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         <svg class="h-6 w-6 shrink-0 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -118,7 +107,7 @@ export default function Home() {
                   <div class="text-xs font-semibold leading-6 text-gray-400">Your teams</div>
                   <ul role="list" class="-mx-2 mt-2 space-y-1">
                     <li>
-                      <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:text-indigo-600 hover:bg-gray-50" -->
+                     */ Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:text-indigo-600 hover:bg-gray-50"*/
                       <a href="#" class="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                         <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border text-[0.625rem] font-medium bg-white text-gray-400 border-gray-200 group-hover:border-indigo-600 group-hover:text-indigo-600">H</span>
                         <span class="truncate">Heroicons</span>
@@ -154,9 +143,9 @@ export default function Home() {
       </div>
     </div>
   
-    <!-- Static sidebar for desktop -->
+    /*  Static sidebar for desktop */
     <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
-      <!-- Sidebar component, swap this element with another sidebar if you like -->
+    /*  Sidebar component, swap this element with another sidebar if you like -->
       <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6 pb-4">
         <div class="flex h-16 shrink-0 items-center">
           <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
@@ -166,7 +155,7 @@ export default function Home() {
             <li>
               <ul role="list" class="-mx-2 space-y-1">
                 <li>
-                  <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:text-indigo-600 hover:bg-gray-50" -->
+                /* Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:text-indigo-600 hover:bg-gray-50"*/
                   <a href="#" class="bg-gray-50 text-indigo-600 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     <svg class="h-6 w-6 shrink-0 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -221,7 +210,7 @@ export default function Home() {
               <div class="text-xs font-semibold leading-6 text-gray-400">Your teams</div>
               <ul role="list" class="-mx-2 mt-2 space-y-1">
                 <li>
-                  <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:text-indigo-600 hover:bg-gray-50" -->
+                /*  Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:text-indigo-600 hover:bg-gray-50" */
                   <a href="#" class="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
                     <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border text-[0.625rem] font-medium bg-white text-gray-400 border-gray-200 group-hover:border-indigo-600 group-hover:text-indigo-600">H</span>
                     <span class="truncate">Heroicons</span>
@@ -264,7 +253,7 @@ export default function Home() {
           </svg>
         </button>
   
-        <!-- Separator -->
+        /*  Separator */
         <div class="h-6 w-px bg-gray-200 lg:hidden" aria-hidden="true"></div>
   
         <div class="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
@@ -283,10 +272,10 @@ export default function Home() {
               </svg>
             </button>
   
-            <!-- Separator -->
+            /*  Separator */
             <div class="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-200" aria-hidden="true"></div>
   
-            <!-- Profile dropdown -->
+            /*  Profile dropdown */
             <div class="relative">
               <button type="button" class="-m-1.5 flex items-center p-1.5" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                 <span class="sr-only">Open user menu</span>
@@ -299,7 +288,7 @@ export default function Home() {
                 </span>
               </button>
   
-              <!--
+              /* 
                 Dropdown menu, show/hide based on menu state.
   
                 Entering: "transition ease-out duration-100"
@@ -308,9 +297,9 @@ export default function Home() {
                 Leaving: "transition ease-in duration-75"
                   From: "transform opacity-100 scale-100"
                   To: "transform opacity-0 scale-95"
-              -->
+                  */
               <div class="absolute right-0 z-10 mt-2.5 w-32 origin-top-right rounded-md bg-white py-2 shadow-lg ring-1 ring-gray-900/5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-                <!-- Active: "bg-gray-50", Not Active: "" -->
+                <!-- Active: "bg-gray-50", Not Active: "" */
                 <a href="#" class="block px-3 py-1 text-sm leading-6 text-gray-900" role="menuitem" tabindex="-1" id="user-menu-item-0">Your profile</a>
                 <a href="#" class="block px-3 py-1 text-sm leading-6 text-gray-900" role="menuitem" tabindex="-1" id="user-menu-item-1">Sign out</a>
               </div>
@@ -321,7 +310,7 @@ export default function Home() {
   
       <main class="py-10">
         <div class="px-4 sm:px-6 lg:px-8">
-          <!-- Your content -->
+        /*  Your content */
         </div>
       </main>
     </div>
